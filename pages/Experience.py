@@ -8,7 +8,7 @@ margin_r,body,margin_l = st.columns([0.4, 3, 0.4])
 with body:
     menu()
 
-    st.header("📚 Experience",divider='rainbow')
+    st.header("📚 Experience",divider='blue')
     st.write("")
 
     def experience_unit(title, position, date, location, content,button_name,button_link):

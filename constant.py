@@ -4,10 +4,10 @@ skill_col_size = 5
 
 def menu():
     bar0, bar1, bar2, bar3, bar4= st.columns([0.1,1,1,1,1])
-    bar1.page_link("🏠_Mainpage.py", label="Introduction", icon="🏠")
-    bar2.page_link("pages/1_📚_Experience.py", label= "Experience", icon="📚")
-    bar3.page_link("pages/2_🎨_Portofolio.py", label="Portofolio", icon="🎨")
-    bar4.page_link("pages/3_🌏_Contacts.py", label="Contacts", icon="🌏")
+    bar1.page_link("app.py", label="Introduction", icon="🏠")
+    bar2.page_link("pages/Experience.py", label= "Experience", icon="📚")
+    bar3.page_link("pages/Portfolio.py", label="Portfolio", icon="💻")
+    bar4.page_link("pages/Contacts.py", label="Contacts", icon="🌏")
     st.write("")
 
 #publication_url --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -24,67 +24,23 @@ github_logo = '''
 # personal info (for main page) --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 info = {'brief':
               """    
-                Starting from physical therapist, to UX designer, to software engineer and product manager... 
-                I am a passionate and curious explorer currently pursuing a Computer Science and Anthropology major at Brandeis University, expected to graduate in May 2025.
-                **I believe in the intersectionality of quantitative and qualitative subjects, that neither approach alone can lead one to the absolute truth.**
+                Dedicated individual with a background in statistical programming & data science with an interest in finance, economics and technology.
+
+                Graduating in May 2025
+
+                **Everything Data**
               """,
-        'name':'Haoran cheng', 
-        'study':'Brandeis University',
-        'location':'Boston, MA',
-        'interest':'Full Stack, Data Science, Product Management',
-        'skills':['Python','Java','Javascript','Typescript','Shell','HTML & CSS','React','Node.js','Tableau','Streamlit','PySpark','Svelte','Docker','Kafka','Kubernetes','MongoDB','PostgreSQL','MySQL','SQLite','AWS','Github','Gitlab','Figma','OpenAI API','Excalidraw','Trello','REST api','HTTP'],
+        'name':'Calvin Du', 
+        'education':'University of British Columbia',
+        'location':'Vancouver, BC',
+        'interest':'Data Engineering, Data Science, Machine Learning',
+        'skills':['Python','SQL'],
         }
 
 # Experience --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #[[header, subheader, date, location, content, link, link_url], [...], etc.]
 
-Experience = [
-              [":green[Chewy] | E-commerce", "Software Engineer Intern", 
-              "June 2024 – present", "Boston, MA", 
-              """
-              - Developed the software template feature for a corporate-level internal tool built on **Backstage**, actively used by 500+ developers. Automated the deployment of **Helm charts** and **Terraform** onto a shared **AWS EKS** cluster.
-              - Implemented **GitHub Actions** and **Jenkins** CI/CD pipelines to streamline development workflows and project config.
-              - Coded the backend **Cookiecutter** action plugin in **Typescript**, later simulated and verified with 10 **Jest** unit tests.
-              - Utilized **Jenkins**, **Docker**, **Poetry**, and **Python** script to auto deploy customized Docker Image to **AWS ECR**.
-              """, 
-              "Company website", "https://www.chewy.com"],
-
-              [":blue[Zbyte] Technology | Data Warehouse Startup", "Product Manager Intern", 
-              "May 2023 – Sep 2023", "Hangzhou, China", 
-              """
-              - Designed a **LLM - Dataset** chat app’s architecture with PM director, in which user could upload private datasets enabling LLM chat app response more accurately to domain-specific inquiries.
-              - Maintained and fixed 150+ detailed errors in reusable **React** components for a web-base Data Warehouse while communicate with UI designers for ”designer review”.
-              - Drafted and perfected the documentation for a Data Warehouse, including Data Types, 50+ SQL Commands, and 10+ Build-in Functions.
-              - Published 3 articles, each attracts 5k+ reads for the company‘s tech blog; including two Analysis of Forrester and G2’s review on Cloud Data Warehouse.
-              """,
-              "Company website", "https://relyt.cloud"],
-
-              ["Brandeis :orange[Quant Club]", "Software Engineer", 
-                "Jan 2023 – Sep 2023", "Waltham, MA", 
-                """
-                - Contribute to research, gather, and analyze information of different companies where we show users companies’ volatility indices using Python.
-                - Designed and developed a website that allows users to see data regarding companies’ volatility indices utilizing **JavaScript, React, and Node.js** (setting up the website’s skeleton, capable of automatically giving users the most up-to-date information).
-                """,
-              "Club website", "https://brandeisquantclub.org"],
-
-              [":orange[Brandeis University] | Anthropology Department", "Research Assistant",
-                "Sep 2022 – Aug 2023", "Waltham, MA", 
-                """
-                - Collaborated with Anthropology professor Elizabeth Ferry on researching asset tokenization and cryptocurrencies as cultural phenomena.
-                - Interviewed 17 people who worked in Finance and IT industry during the summer; asking about their opinion on Gold Tokenization, Bitcoin, Blockchain, and Central Bank digital Currency in China. These finding support and enrich Professor Ferry’s ongoing book writing about Gold in mining and finance.
-                - Weekly report based on searching for and reading news, social media reports, and journalistic and academic analyses.
-                """,
-                "Department website", "https://www.brandeis.edu/anthropology/undergraduate/research-and-funding/student-bios.html"],
-
-              [":violet[Branda] | Brandeis Campus App", "Software Engineer", 
-              "Jan 2023 – present", "Waltham, MA", 
-              """
-              - Collaborated in a **Agile** software development cycle, main responsible for improving the mobile UI/UX.
-              - Implemented a interactive calendar daily used by 1.6K student to keep track of school events, using **REST APIs** with **React Native** as the front-end. Utilized **Redis** to cache hotspot data, reducing the workload on main database.
-              - Managed database migration from Heroku to **Firebase** to meet user growth, implemented API touchpoints within the CI/CD pipeline for migration testing.
-              """,
-              "App Store link", "https://apps.apple.com/us/app/branda/id1437022581"]
-              ]      
+Experience = []      
 
 # Portfolio --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #     {'project1':[HEADER, CONTENT]
@@ -119,10 +75,9 @@ Portfolio = { 1:[':blue[Deis]Evaluation - Course Evaluation Website',
             }
               
 # Contacts --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-phone = "971-900-6780"
-email = "haorancheng@brandeis.edu"
-linkedin_link = "www.linkedin.com/in/haoran-cheng/"
-github_link = "https://github.com/Rsirp0c?tab=repositories"
+email = "calvingdu@gmail.com"
+linkedin_link = "www.linkedin.com/in/calvingdu/"
+github_link = "https://github.com/calvingdu"
 
 
 # iframes --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

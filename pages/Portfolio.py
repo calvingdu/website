@@ -34,11 +34,11 @@ with body:
    Portfolio_component(Portfolio[2][0], Portfolio[2][1])
 
    st.link_button("Go to Github", "https://github.com/Rsirp0c/D3-practice")
-   st.image("src/Screenshot-2.png", width=800)
+   st.image("images/Screenshot-2.png", width=800)
    with st.expander("See more"):
-      st.image("src/Screenshot-1.png", width=800)
-      st.image("src/Screenshot-3.png", width=800)
-      st.image("src/Screenshot-4.png", width=800)
+      st.image("images/Screenshot-1.png", width=800)
+      st.image("images/Screenshot-3.png", width=800)
+      st.image("images/Screenshot-4.png", width=800)
 
    # Desktop ChatApp -------------------------------------------------------------- 
    Portfolio_component(Portfolio[3][0], Portfolio[3][1])
