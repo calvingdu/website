@@ -7,7 +7,7 @@ def menu():
     bar1.page_link("app.py", label="Introduction", icon="🏠")
     bar2.page_link("pages/Experience.py", label= "Experience", icon="📚")
     bar3.page_link("pages/Portfolio.py", label="Portfolio", icon="💻")
-    bar4.page_link("pages/Contacts.py", label="Contacts", icon="🌏")
+    bar4.page_link("pages/model.py", label="I work 4 u?", icon="🌏")
     st.write("")
 
 #publication_url --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -47,32 +47,7 @@ Experience = []
 #      'project2':[HEADER, CONTENT]
 #      ...}
 
-Portfolio = { 1:[':blue[Deis]Evaluation - Course Evaluation Website',
-              """
-              Launched a course evaluation web app for Brandeis students to review and share courses, exceeding 200+ active users.
-              Designed the whole UI with Figma and Implemented front end with Javascript, HTML/CSS in a MERN Stack.
-              """],
-              2:['Data Visualization in :orange[D3.js]',
-                  """
-                Created a data visualization web app for Massachusetts police expenditure data using D3.js.
-                """],
-              3:[':blue[LLM] Desktop ChatApp',
-                """
-                - Designed and developed a cross-platform **desktop LLM Chat app**, enabling chat over user-upload dataset; providing a more accurate response to domain-specific inquiries than ChatGPT.
-                - Utilized Embedding and Searching from **OpenAI API** to optimize Chat app’s response. Split the user-upload file into small chunks; used OpenAI Embedding model to vectorize each chunk and save them into Qdrant database. Transform user query to vector using OpenAI, and then inquire the top match text chunk from Qdrant database using topk value.
-                """],
-              4:[':orange[Anthropology] Research Project - A Timeless Building',
-                """
-                - An **qualitative anthropological research** on the preservation and adaption of historical sites; as final project, received the highest score in class.
-                - My fieldwork includes interviewing educators, examing archive, on-site obervation. Through my fieldwork at King’s Chapel, I argued for a humane approach to preserving historic sites, that seeks a balance between **maintaining the historical significance and the sites’ adaptations to societal changes**.
-                """],
-              5:[':green[RAG] playground',  
-                """
-                - Developed a **RAG** chatbot that support difference choices over Embedding model, chunking strategy, top k retreival, LLM model, prompt engineering, and meta-data retreival search.
-                - Implemented the file uploading workflow; Utilized **Langchain splitter** module and Python script to clean and chunk the uploaded file and use Huggingface sentence transformers and **Pinecone** to vectorize and store data.
-                - Used SpaCy NER model to retreive meta data from prompt and ran a hybrid search using meta-data and vector.
-                """]
-            }
+Portfolio = {}
               
 # Contacts --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 email = "calvingdu@gmail.com"
