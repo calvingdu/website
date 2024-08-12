@@ -32,7 +32,7 @@ with body:
         st.download_button(
             label="Download my :blue[resume]",
             data=pdf_file,
-            file_name="calvindu_resume",
+            file_name="calvindu_resume.pdf",
             mime="application/pdf")
 
     with col3:

@@ -3,11 +3,12 @@ import streamlit as st
 skill_col_size = 5
 
 def menu():
-    bar0, bar1, bar2, bar3, bar4= st.columns([0.1,1,1,1,1])
+    bar0, bar1, bar2, bar3, bar4, bar5= st.columns([0.1,1,1,1,1,1])
     bar1.page_link("app.py", label="Introduction", icon="🏠")
     bar2.page_link("pages/Experience.py", label= "Experience", icon="📚")
     bar3.page_link("pages/Portfolio.py", label="Portfolio", icon="💻")
-    bar4.page_link("pages/model.py", label="I work 4 u?", icon="🌏")
+    bar4.page_link("pages/model.py", label="Fun Model?", icon="🌏")
+    bar5.page_link("pages/test.py", label="Contact", icon="📧")
     st.write("")
 
 #publication_url --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
